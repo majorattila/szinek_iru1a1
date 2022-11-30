@@ -1,0 +1,5 @@
+git init
+git config --global user.email "attilamajor1997@gmail.com"
+git config --global user.name "majorattila"
+git remote add origin https://github.com/majorattila/szinek_iru1a1.git
+git branch -M main
