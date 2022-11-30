@@ -3,6 +3,50 @@ body{
     background-color: rgb(178, 243, 221);
 }
 
+/* a wrapperen belüli minden közvetlen div*/
+#wrapper > div {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#header{
+    grid-area: header;
+    background-color: rgb(238, 151, 38);
+}
+
+#nav{
+    grid-area: nav;
+}
+
+#content{
+    grid-area: content;
+    height: 30vh;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+#wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-areas: 
+        "header header header header"
+        "nav content aside sidebar"
+        "footer footer footer footer";
+}
+
 /* reszponzivitás beállítása */
 @media all and (max-width: 1200px){
     body{
