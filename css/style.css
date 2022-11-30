@@ -1,3 +1,25 @@
-body {
+body{
+    margin: 20px;
     background-color: rgb(178, 243, 221);
+}
+
+/* reszponzivitás beállítása */
+@media all and (max-width: 1200px){
+    body{
+        /* csak a változást jelenít meg */
+        background-color: rgb(114, 167, 149);
+    }
+}
+
+@media all and (max-width: 800px){
+    body{
+        background-color: rgb(72, 102, 92);
+    }
+}
+
+@media all and (max-width: 500px){
+    body{
+        color: whitesmoke;
+        background-color: rgb(42, 63, 56);
+    }
 }
